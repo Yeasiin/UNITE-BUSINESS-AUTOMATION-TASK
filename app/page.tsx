@@ -3,10 +3,9 @@ import TopNews from "@/components/TopNews";
 import LatestNews from "@/components/LatestNews";
 import TrendingNews from "@/components/TrendingNews";
 import { NewsResponse } from "../types";
-
 async function getHomeData(): Promise<NewsResponse> {
-  const res = await fetch(process.env.API_ENDPOINT as string, {
-    next: { revalidate: 60 },
+  const res = await fetch(process.env.API_ENDPOINT!, {
+    cache: "no-store",
   });
   if (!res.ok) {
     throw new Error("Failed to fetch home data");
