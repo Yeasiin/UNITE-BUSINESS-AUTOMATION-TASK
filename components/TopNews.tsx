@@ -46,17 +46,20 @@ export default function TopNews({
                   href={""}
                   className={`font-semibold line-clamp-3 hover:underline ${
                     index === 0
-                      ? "text-lg sm:text-xl lg:text-2xl"
+                      ? "text-sm sm:text-xl lg:text-2xl"
                       : "text-sm sm:text-base lg:text-md"
                   }`}
                 >
                   {news.title}
                 </Link>
-                {index !== 0 && (
-                  <p className="line-clamp-2 text-xs sm:text-sm mt-3">
-                    {news.summary}
-                  </p>
-                )}
+
+                <p
+                  className={`line-clamp-2 text-xs sm:text-sm mt-3 ${
+                    index === 0 ? "sm:hidden" : ""
+                  } `}
+                >
+                  {news.summary}
+                </p>
               </div>
             </article>
           ))}
