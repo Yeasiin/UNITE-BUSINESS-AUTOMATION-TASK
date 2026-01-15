@@ -39,7 +39,7 @@ export default function TopNews({
             />
             <div>
               <div className="text-red-400 mt-2 mb-2 text-xs sm:text-sm">
-                {news.tags[0]}
+                {news.category.name}
               </div>
               <Link
                 href={""}
