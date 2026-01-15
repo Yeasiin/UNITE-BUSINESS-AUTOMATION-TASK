@@ -22,7 +22,7 @@ export default function LatestNews({
               height={160}
               className="w-full h-40 sm:h-40 object-cover"
             />
-            <div className="p-3">
+            <div className="py-3">
               <Link
                 href="#"
                 className="font-semibold text-sm sm:text-base lg:text-md hover:underline"
