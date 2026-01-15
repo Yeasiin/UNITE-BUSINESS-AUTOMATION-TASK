@@ -9,9 +9,9 @@ const layoutByIndex: Record<number, string> = {
 };
 
 const borderByIndex: Record<number, string> = {
-  0: "border-r border-gray-300",
-  1: "border-b border-gray-300",
-  3: "border-b border-gray-300",
+  0: "lg:border-r border-gray-300",
+  1: "lg:border-b border-gray-300",
+  3: "lg:border-b border-gray-300",
 };
 
 export default function TopNews({
