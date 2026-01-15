@@ -25,7 +25,7 @@ export default function TopNews({
         {top_news.slice(0, 4).map((news, index) => (
           <article
             key={news.id}
-            className={`flex flex-col h-full px-2 sm:px-4 mb-4 pb-4  ${
+            className={`cursor-pointer flex flex-col h-full px-2 sm:px-4 mb-4 pb-4  ${
               layoutByIndex[index]
             }
                           ${borderByIndex[index] ?? ""}`}

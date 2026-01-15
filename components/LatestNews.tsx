@@ -13,7 +13,7 @@ export default function LatestNews({
         {latest_news.slice(0, 4).map((news) => (
           <div
             key={news.id}
-            className="flex-1 px-2 sm:px-4 bg-white sm:border-r border-gray-300 sm:last:border-r-0"
+            className="cursor-pointer flex-1 px-2 sm:px-4 bg-white sm:border-r border-gray-300 sm:last:border-r-0"
           >
             <Image
               src={news.image}
