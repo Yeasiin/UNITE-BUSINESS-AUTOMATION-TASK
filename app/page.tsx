@@ -16,7 +16,7 @@ async function getHomeData(): Promise<NewsResponse> {
 export default async function Home() {
   const { data } = await getHomeData();
   return (
-    <div className="flex min-h-screen font-sans px-2 sm:px-4">
+    <div className="flex min-h-screen font-sans px-4">
       <div className="container mx-auto">
         <NavMenu category_news={data.category_news} />
         <main>
